@@ -1,0 +1,8 @@
+version: "3"
+services:
+  ydk-py:
+    image: ydkdev/ydk-py
+    stdin_open: true # docker run -i
+    tty: true
+    volumes:
+      - "$PWD/src:/tmp/src"
